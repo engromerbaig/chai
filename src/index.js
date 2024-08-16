@@ -3,18 +3,20 @@ import express from 'express';
 import dotenv from 'dotenv';
 import connectDB from './db/index.js';
 // Load environment variables from .env file
-dotenv.config({
-    path: './.env'
-});
+// dotenv.config({
+//     path: './.env'
+// });
+dotenv.config();
 
 const app = express();
 
 
 const PORT = process.env.PORT || 3000;
 
-
-
 connectDB();
+
+
+
 
 // Define your routes and middleware here
 app.get('/', (req, res) => {
