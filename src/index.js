@@ -18,7 +18,7 @@ connectDB();
 
 // Define your routes and middleware here
 app.get('/', (req, res) => {
-    res.send('Hello, world!');
+    res.send('Server is running');
 });
 
 
